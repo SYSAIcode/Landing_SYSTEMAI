@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>SYSTEM AI | Automatización & Inteligencia Artificial</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        // Configuración de Tailwind corregida
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        garnet: { 
+                            500: '#ab1a35', 
+                            600: '#7A101A', 
+                            700: '#5e0d15', 
+                            800: '#3c050d',
+                            900: '#1a0508', 
+                            950: '#0d0204' 
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Syne', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* FONDO MAESTRO: NEGRO CON MATIZ GRANATE */
+        body { 
+            background-color: #0d0204 !important; 
+            color: #f3f4f6 !important; 
+            margin: 0;
+            padding: 0;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(122, 16, 26, 0.15), transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(122, 16, 26, 0.1), transparent 40%) !important;
+            background-attachment: fixed !important;
+            min-height: 100vh;
+        }
+
+        /* Transparencia global para que se vea el fondo del body */
+        section, nav, header {
+            background-color: transparent !important;
+        }
+
+        /* Estilo de las cajas de vídeo/imagen */
+        .image-box {
+            background: rgba(20, 5, 8, 0.7) !important;
+            border: 1px solid rgba(122, 16, 26, 0.3) !important;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 1.5rem;
+        }
+
+        /* Estilo del botón principal */
+        .btn-whatsapp {
+            background-color: #7A101A !important;
+            color: white !important;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(122, 16, 26, 0.4);
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #ab1a35 !important;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-garnet-600 selection:text-white">
+
+    <nav class="fixed w-full top-0 z-50 bg-[#0a0203]/95 backdrop-blur-md border-b border-garnet-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 md:h-28 flex items-center justify-between">
+        
+        <a href="#" class="flex items-center">
+            <img src="Logo_SYSTEMAI.png" alt="SYSTEM AI" class="h-10 md:h-20 w-auto object-contain mix-blend-lighten">
+        </a>
+        
+        <a href="https://wa.me/34600000000?text=Hola,%20vengo%20de%20la%20web%20SYSTEM%20AI.%20Me%20interesaría%20saber%20más%20sobre%20vosotros..." 
+           target="_blank" 
+           class="btn-whatsapp text-white font-heading font-bold py-2 px-4 md:py-3 md:px-8 rounded-full text-[10px] md:text-sm flex items-center gap-2 tracking-widest uppercase">
+            <i class="fa-brands fa-whatsapp text-sm md:text-lg"></i>
+            <span>Agendar <span class="hidden sm:inline">Reunión</span></span>
+        </a>
+
+    </div>
+</nav>
+
+    <section class="pt-48 pb-32 px-6 text-center max-w-5xl mx-auto flex flex-col items-center">
+        <div class="inline-block border border-garnet-600/30 bg-garnet-900/50 text-garnet-400 font-medium text-xs tracking-[0.2em] uppercase py-1.5 px-4 rounded-full mb-8">
+            Agencia de Automatización & IA
+        </div>
+        <div class="w-full px-2 mx-auto text-center">
+    <h1 class="font-heading font-extrabold text-white mb-6 flex flex-col items-center justify-center gap-1">
+        
+        <span class="text-[1.2rem] min-[390px]:text-[1.4rem] sm:text-4xl md:text-6xl lg:text-6xl tracking-tight whitespace-nowrap">
+            Libera el <span style="color: #ab1a35; text-shadow: 0 0 25px rgba(171, 26, 53, 0.5)";>100% del</span>
+        </span>
+        
+        <span class="text-[1.05rem] min-[390px]:text-[1.2rem] sm:text-4xl md:text-6xl lg:text-6xl tracking-tight whitespace-nowrap">
+            <span style="color: #ab1a35; text-shadow: 0 0 25px rgba(171, 26, 53, 0.5);">potencial</span> de tu empresa
+        </span>
+        
+        
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl font-light mb-14 leading-relaxed">
+            Construimos Agentes de IA y automatizamos tus embudos de venta. Eliminamos las tareas repetitivas para que tu equipo se centre en lo único importante: escalar.
+        </p>
+
+        <a href="https://wa.me/34XXXXXXXXX?text=Hola,%20vengo%20de%20la%20web%20y%20me%20gustaría%20agendar%20una%20reunión%20para%20ver%20una%20demo." target="_blank" class="btn-whatsapp text-white font-heading font-bold text-lg py-4 px-10 rounded-full flex items-center gap-3">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            Agendar Demo Gratuita
+        </a>
+
+        <div class="mt-24 pt-10 border-t border-garnet-800/30 w-full flex flex-col items-center opacity-40 hover:opacity-100 transition-opacity duration-500">
+            <p class="text-xs uppercase tracking-widest mb-6 font-semibold">Tecnología impulsada por</p>
+            <div class="flex gap-8 md:gap-16 text-sm font-heading font-bold tracking-wider">
+                <span>GEMINI</span>
+                <span>OPENAI</span>
+                <span>N8N</span>
+                <span>CLAUDE</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+            <div class="order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-garnet-950 border border-garnet-800/50 text-garnet-500 text-xs font-bold tracking-widest uppercase mb-6">
+    <i class="fa-solid fa-arrow-trend-up text-sm"></i> Sistemas de Escalado
+</div>
+              <h2 class="font-heading text-4xl font-bold text-white mb-6">Automatización de Embudos y Upsells</h2>
+                <p class="text-gray-400 text-lg font-light leading-relaxed mb-8">
+                    Hacemos seguimiento automático a tus leads por WhatsApp o Email y ofrecemos productos complementarios en el momento perfecto. Aumentamos tu ticket medio en piloto automático sin que muevas un dedo.
+                </p>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-garnet-500"></i> Seguimiento 100% automatizado.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-garnet-500"></i> Upsells inteligentes integrados.</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-garnet-500"></i> Agentes automatizados.</li>
+                </ul>
+            </div>
+            
+            <div class="order-1 lg:order-2 image-box rounded-2xl p-4 aspect-square flex items-center justify-center relative overflow-hidden group">
+    <video src="video_embudo.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover scale-110 opacity-50 group-hover:opacity-80 transition-all duration-700 mix-blend-luminosity"></video>
+    <div class="relative z-10 text-center pointer-events-none">
+        <i class="fa-brands fa-whatsapp text-5xl text-garnet-500 mb-4 drop-shadow-lg"></i>
+        <p class="font-heading font-bold text-white tracking-widest text-sm drop-shadow-md">[ DEMO EMBUDO ]</p>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <section class="py-24 md:py-32 px-6 bg-[#0a0203]">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12 md:gap-16">
+            
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-garnet-950 border border-garnet-800/50 text-garnet-500 text-xs font-bold tracking-widest uppercase mb-6">
+                    <i class="fa-solid fa-robot text-sm"></i> Agentes Organizativos
+                </div>
+                <h3 class="font-heading text-4xl md:text-5xl text-white mb-6 tracking-tight leading-tight">
+                    Tu Agenda se Gestiona Sola, 24/7
+                </h3>
+                <p class="text-gray-400 font-light leading-relaxed mb-8 max-w-2xl mx-auto md:mx-0 text-lg">
+                    Deja de perder tiempo confirmando citas a mano. Nuestro Asistente de IA cualifica a los interesados y agenda las reuniones directamente en tu calendario, eliminando la fricción y asegurando citas de calidad.
+                </p>
+                <ul class="space-y-4 text-gray-300 text-sm font-light mb-10 inline-block text-left">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-garnet-500 text-lg"></i> Cualificación automática de leads</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-garnet-500 text-lg"></i> Sincronización real con tu calendario</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-check text-garnet-500 text-lg"></i> Recordatorios automáticos anti-Faltas</li>
+                </ul>
+            </div>
+
+            <div class="flex-1 w-full max-w-md md:max-w-full">
+                <div class="image-box rounded-2xl p-4 aspect-square flex items-center justify-center relative overflow-hidden group shadow-[0_0_50px_rgba(122,16,26,0.1)]">
+                    <video src="video_asistente.mp4" autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover scale-110 opacity-60 group-hover:opacity-90 transition-all duration-700 mix-blend-luminosity"></video>
+                    
+                    <div class="relative z-10 text-center pointer-events-none">
+                        <i class="fa-regular fa-calendar-check text-6xl text-garnet-500 mb-4 drop-shadow-lg"></i>
+                        <p class="font-heading font-bold text-white tracking-widest text-sm drop-shadow-md uppercase">[ Demo Agenda ]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 border-t border-garnet-800/20 bg-[#070102]">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            
+            <div class="shrink-0 relative group">
+                <div class="absolute inset-0 bg-garnet-600 rounded-full blur-2xl opacity-10 group-hover:opacity-30 transition-opacity duration-500"></div>
+                <img src="tu_foto.png" alt="Daniel Bohórquez" class="relative z-10 w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-2 border-garnet-800 shadow-[0_0_40px_rgba(122,16,26,0.2)] grayscale-[20%] hover:grayscale-0 transition-all duration-500">
+            </div>
+            
+            <div class="text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-garnet-950 border border-garnet-800/50 text-garnet-500 text-xs font-bold tracking-widest uppercase mb-6">
+                    C.E.O.
+                </div>
+                
+                <h3 class="font-heading text-4xl text-white mb-6 tracking-tight">Daniel Bohórquez</h3>
+                
+                <div class="border-l-2 border-garnet-600 pl-6 mb-8 py-2">
+                    <p class="text-xl text-white font-heading italic leading-relaxed">
+                        "Me frustra ver a dueños de negocios con talento perdiendo la vida en tareas monótonas. La tecnología no viene a quitarnos el trabajo, viene a ayudarnos con el trabajo aburrido para devolvernos la libertad de crear y vender."
+                    </p>
+                </div>
+
+                <p class="text-gray-400 font-light leading-relaxed mb-6">
+                    Nacido en 2002, Daniel es nativo de la era de la IA. Fundó <strong>SYSTEM AI</strong> para democratizar la eficiencia: que las PYMES dejen de "apagar fuegos" a mano y empiecen a escalar con sistemas automáticos.
+                </p>
+                
+                <p class="text-gray-400 font-light leading-relaxed">
+                    Su enfoque es 100% humano: sentarse contigo, entender tu negocio y construir el sistema que te devuelva 10 horas a la semana mientras tus ventas crecen.
+                </p>
+            </div>
+        </div>
+    </section>
+  
+    <section class="pt-16 pb-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl font-bold text-white mb-4">Por qué elegir SYSTEM AI</h2>
+                <p class="text-gray-400 font-light text-lg">Tecnología de vanguardia respaldada por una ética de trabajo radical.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl border border-garnet-800/30 bg-[#0a0203]/50 hover:bg-[#1a0508] hover:border-garnet-600/50 transition-all duration-300">
+                    <i class="fa-solid fa-scale-balanced text-3xl text-garnet-500 mb-5"></i>
+                    <h3 class="font-heading text-xl text-white mb-3">Transparencia Radical</h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">No aceptamos proyectos si no estamos 100% seguros de poder mejorarlos. Preferimos perder un cliente a entregar un mal resultado.</p>
+                </div>
+                <div class="p-8 rounded-2xl border border-garnet-800/30 bg-[#0a0203]/50 hover:bg-[#1a0508] hover:border-garnet-600/50 transition-all duration-300">
+                    <i class="fa-solid fa-fingerprint text-3xl text-garnet-500 mb-5"></i>
+                    <h3 class="font-heading text-xl text-white mb-3">100% a Medida</h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">Tu empresa es única. No usamos plantillas genéricas; auditamos tus procesos y creamos sistemas adaptados exclusivamente a tu realidad.</p>
+                </div>
+                <div class="p-8 rounded-2xl border border-garnet-800/30 bg-[#0a0203]/50 hover:bg-[#1a0508] hover:border-garnet-600/50 transition-all duration-300">
+                    <i class="fa-solid fa-arrow-trend-up text-3xl text-garnet-500 mb-5"></i>
+                    <h3 class="font-heading text-xl text-white mb-3">Foco en Rentabilidad</h3>
+                    <p class="text-gray-400 font-light text-sm leading-relaxed">No instalamos tecnología por moda. Cada automatización y cada bot tiene un único objetivo final: ahorrarte horas y multiplicar tus ventas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 bg-gradient-to-b from-transparent to-[#1a0508]">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-garnet-900/50 border border-garnet-600/30 text-garnet-400 text-sm font-medium tracking-wide mb-8">
+                <i class="fa-solid fa-clock"></i> El momento es ahora
+            </div>
+            
+            <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 tracking-tight leading-tight">
+                En tres años, todas las empresas estarán automatizadas.
+            </h2>
+            
+            <p class="text-xl text-gray-400 font-light mb-12 leading-relaxed max-w-3xl mx-auto">
+                Quienes den el salto hoy, dominarán su sector. Quienes esperen, tendrán que competir contra sistemas que no duermen, no se cansan y no cometen errores.<br><br>
+                <span class="text-white font-medium">Toma la ventaja antes que tu competencia.</span> Hablemos y te mostraré una demo gratuita de lo que la IA puede hacer por tu negocio.
+            </p>
+            
+            <a href="https://wa.me/34XXXXXXXXX?text=Hola,%20vengo%20de%20la%20web%20y%20me%20gustaría%20agendar%20una%20reunión%20para%20ver%20una%20demo." target="_blank" class="btn-whatsapp inline-flex text-white font-heading font-bold text-xl py-5 px-12 rounded-full items-center gap-3 justify-center w-full md:w-auto hover:scale-105 transition-transform shadow-[0_0_40px_rgba(122,16,26,0.4)]">
+                <i class="fa-brands fa-whatsapp text-3xl"></i>
+                Agendar Demo por WhatsApp
+            </a>
+            
+            <p class="mt-6 text-xs text-garnet-500 font-bold tracking-widest uppercase">Sesión 100% gratuita y sin compromiso</p>
+        </div>
+    </section>
+
+    <footer class="border-t border-garnet-800/30 py-10 px-6 bg-[#0a0203]">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+            <div class="font-heading font-bold tracking-wider text-gray-400">
+                SYSTEM<span class="text-garnet-600">AI</span>
+            </div>
+            <p>albor@alborconsultor.com</p>
+            <p>© 2026 SYSTEM AI. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
